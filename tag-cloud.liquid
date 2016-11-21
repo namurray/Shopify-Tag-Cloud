@@ -1,0 +1,17 @@
+<ul class="blog-stories-tags">
+    {% for tag in blogs['BLOG-HANDLE'].all_tags %}
+       {% assign count = 0 %}
+       {% for article in blogs[blog.handle].articles %}
+          {% if article.tags contains tag %}
+      		{% capture count %}{{ count | plus: 1 }}{% endcapture %}
+          {% endif %}
+       {% endfor %}
+      {% assign count = count | plus: 0 %}
+      <li class="tag-{% if count <= 3 %}alpha
+                 {%elsif count >= 5 and count < 9 %}beta
+                 {%elsif count >= 9 and count < 12 %}gamma
+                 {%elsif count >= 12 and count < 20 %}delta
+                 {%endif%}">
+        <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }} </a></li>
+  	{% endfor %}
+</ul>
