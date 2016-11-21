@@ -15,3 +15,6 @@
         <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }} </a></li>
   	{% endfor %}
 </ul>
+{% comment %}
+Line 2: Replace BLOG-HANDLE with your blog's handle, eg  {% for tag in blogs['my-blog'].all_tags %}
+{% endcomment %}
