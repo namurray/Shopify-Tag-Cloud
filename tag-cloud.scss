@@ -1,6 +1,14 @@
 /* Copy and paste this into your theme's stylesheet file. 
 Feel free to change the font sizes to whatever you wish. */
 
+.blog-stories-tags {
+  display: inline-block;
+  max-width: 630px;
+  li {
+    display: inline-block;
+  }
+}
+
 .tag-alpha {
   font-size: .707em
 }
