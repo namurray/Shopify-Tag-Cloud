@@ -1,7 +1,8 @@
 # Shopify-Tag-Cloud
 Creates a tag cloud for Shopify blogs.
 
-Works by counting up the tags and turning the count output into a numerical operator. CSS rules determine that tags with larger counts get larger font sizes.
+Works by counting up the tags and turning the count output into a numerical operator. CSS rules determine that tags with larger counts get larger font sizes. <br />
+<img src="https://github.com/namurray/Shopify-Tag-Cloud/blob/master/screenshot-loveisproject.myshopify.com%202016-11-21%2014-36-19.png?raw=true" />
 
 <h2>Instructions</h2>
 Place tag-cloud.liquid snippet where you want your cloud to appear in blog.liquid, OUTSIDE of pagination rules.
