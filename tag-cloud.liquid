@@ -8,7 +8,7 @@
        {% endfor %}
       {% assign count = count | plus: 0 %}
       <li class="tag-{% if count <= 3 %}alpha
-                 {%elsif count >= 5 and count < 9 %}beta
+                 {%elsif count >= 4 and count < 9 %}beta
                  {%elsif count >= 9 and count < 12 %}gamma
                  {%elsif count >= 12 and count < 20 %}delta
                  {%endif%}">
