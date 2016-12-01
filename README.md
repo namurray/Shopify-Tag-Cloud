@@ -7,7 +7,7 @@ Works by counting up the tags and turning the count output into a numerical oper
 <h2>Instructions</h2>
 <ol>
 <li>Place tag-cloud.liquid snippet where you want your cloud to appear in blog.liquid, OUTSIDE of pagination rules.</li>
-<li>Line 2: Replace BLOG-HANDLE with your blog's handle, eg:  {% for tag in blogs['my-blog'].all_tags %}</li>
+<li>Replace BLOG-HANDLE with your blog's handle in Line 2, eg:  {% for tag in blogs['my-blog'].all_tags %}</li>
 <li>Add tag-cloud.scss to your stylsheet.</li>
 </ol>
 
